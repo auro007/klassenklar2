@@ -1,6 +1,8 @@
-# Klassenklar
+# Klassenklar (Version 2.0)
 
-Mobile-first installable PWA for learning German pig carcass classification. The app runs with Node.js and has no package dependencies.
+Mobile-first PWA for learning German pig carcass classification (*Schweineklassifizierung* nach SchwHKlV, 1. & 2. FlGDV).
+Version 2.0 includes an interactive **Geräte-Mediathek** with scalable visual diagrams (Auto-FOM III, ZP-Verfahren, OptiGrade MCP), integrated YouTube video guides (Frontmatec animation), 38 structured lessons, 138 training questions, 53 spaced-repetition flashcards, and an interactive lean meat percentage (MFA) simulator.
+The app runs locally with Node.js and has zero third-party npm package dependencies.
 
 ## Run locally
 
