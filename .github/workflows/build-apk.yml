@@ -17,6 +17,12 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
+      - name: Set up Java JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
@@ -24,19 +30,10 @@ jobs:
           cache: 'npm'
 
       - name: Install Dependencies
-        run: npm ci || npm install
+        run: npm install
 
       - name: Sync Capacitor Android
         run: npx cap sync android
-
-      - name: Set up Java JDK 17
-        uses: actions/setup-java@v4
-        with:
-          distribution: 'temurin'
-          java-version: '17'
-
-      - name: Setup Android SDK
-        uses: android-actions/setup-android@v3
 
       - name: Make Gradlew Executable
         run: chmod +x android/gradlew
@@ -46,33 +43,29 @@ jobs:
           cd android
           ./gradlew assembleDebug --no-daemon
 
+      - name: Prepare APK Release File
+        run: |
+          cp android/app/build/outputs/apk/debug/app-debug.apk Klassenklar-v2.apk
+
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
         with:
           name: Klassenklar-v2-APK
-          path: android/app/build/outputs/apk/debug/app-debug.apk
+          path: Klassenklar-v2.apk
           retention-days: 30
 
-      - name: Create GitHub Release with APK
+      - name: Create or Update GitHub Release
         uses: softprops/action-gh-release@v2
-        if: github.ref == 'refs/heads/main'
         with:
           tag_name: v2.0.0
           name: Klassenklar Version 2.0 (Android APK)
           body: |
             ### 📱 Klassenklar Version 2.0 - Android APK
-            
-            Installierbare APK-Datei für dein Android-Smartphone.
-            
-            - **Herunterladen:** Klicke unten auf `app-debug.apk` bzw. `Klassenklar-v2.apk`
-            - **Installation:** Öffne die heruntergeladene Datei auf deinem Smartphone und wähle „Installieren“ (falls gefragt, „Aus dieser Quelle installieren“ erlauben).
-            
-            #### Enthaltene Funktionen:
-            - Vollständige Offline-Nutzung (auch ohne Internet)
-            - Neue **Geräte-Mediathek** mit AutoFOM III, ZP-Verfahren & OptiGrade
-            - 38 Lektionen, 138 Fragen, 53 Karteikarten
-            - Interaktiver MFA-Simulator
-          files: |
-            android/app/build/outputs/apk/debug/app-debug.apk
+
+            Hier kannst du die fertige APK-Datei direkt herunterladen:
+            - **Klassenklar-v2.apk** (siehe Assets unten)
+
+            Einfach auf dem Android-Smartphone herunterladen, antippen und installieren.
+          files: Klassenklar-v2.apk
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
