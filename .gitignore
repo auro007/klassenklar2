@@ -1,0 +1,11 @@
+# Local database and state (contains user passwords and sessions)
+data.json
+*.tmp
+
+# Dependencies
+node_modules/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+Desktop.ini

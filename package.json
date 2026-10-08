@@ -1,0 +1,11 @@
+{
+  "name": "klassenklar-local",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mobile-first local learning app for German pig carcass classification",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check public/app.js && node tests/smoke.mjs"
+  },
+  "engines": { "node": ">=20" }
+}

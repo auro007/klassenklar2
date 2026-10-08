@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img" aria-labelledby="t d">
+ <title id="t">Brutto minus Tara ergibt Netto</title>
+ <desc id="d">Beispiel: Gesamtgewicht einschließlich Haken 101,2 Kilogramm minus Haken und weitere tarierte Lasten 2,4 Kilogramm ergibt Nettoschlachtgewicht 98,8 Kilogramm. Vor dem Wiegen Identität, Präsentation und freie Aufhängung prüfen.</desc>
+ <rect width="900" height="420" rx="24" fill="#f1f7f5"/>
+ <g font-family="Arial,sans-serif" fill="#153c36" text-anchor="middle">
+ <text x="450" y="50" font-size="27" font-weight="bold">Was gehört zum Schlachtgewicht?</text>
+ <rect x="35" y="90" width="230" height="170" rx="18" fill="#d7ebe3"/>
+ <rect x="335" y="90" width="230" height="170" rx="18" fill="#e1eafa"/>
+ <rect x="635" y="90" width="230" height="170" rx="18" fill="#d7ebe3"/>
+ <g font-size="24" font-weight="bold"><text x="150" y="132">Brutto</text><text x="450" y="132">Tara</text><text x="750" y="132">Netto</text></g>
+ <g font-size="34"><text x="150" y="185">101,2 kg</text><text x="450" y="185">2,4 kg</text><text x="750" y="185">98,8 kg</text><text x="300" y="185">−</text><text x="600" y="185">=</text></g>
+ <g font-size="17"><text x="150" y="224">Körper + mitgewogene Last</text><text x="450" y="224">Haken / tarierte Lasten</text><text x="750" y="224">Nettoschlachtgewicht</text></g>
+ <text x="450" y="308" font-size="22" font-weight="bold">Vor der Waage: Nummer · Präsentation · freie Aufhängung</text>
+ <text x="450" y="350" font-size="20">Warm verwiegen: nach Fleischuntersuchung, vor Kühlung.</text>
+ <text x="450" y="388" font-size="18">Rechenbeispiel · Tara nach dem tatsächlichen Wiegesystem berücksichtigen</text>
+ </g>
+</svg>

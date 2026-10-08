@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 650" role="img" aria-labelledby="title desc">
+ <title id="title">Messung und Verwiegung in der Schweineschlachtlinie</title>
+ <desc id="desc">Vereinfachte Prozessfolge. AutoFOM misst früh am ungeöffneten Körper. Sonden messen später am gespaltenen Körper. Gewicht wird nach Fleischuntersuchung vor Kühlung festgestellt. Identität verbindet Messung und Gewicht.</desc>
+ <rect width="960" height="650" rx="24" fill="#f1f7f5"/>
+ <g font-family="Arial,sans-serif" fill="#153c36">
+ <text x="40" y="50" font-size="27" font-weight="bold">Wo entstehen Messwert und Gewicht?</text>
+ <text x="40" y="83" font-size="17">Vereinfachtes Schema · genaue Stationen nach betrieblicher Linie</text>
+ <g stroke="#a4c3b9" stroke-width="2" fill="#fff">
+ <rect x="40" y="115" width="270" height="85" rx="15"/><rect x="345" y="115" width="270" height="85" rx="15"/><rect x="650" y="115" width="270" height="85" rx="15"/>
+ <rect x="650" y="245" width="270" height="85" rx="15"/><rect x="345" y="245" width="270" height="85" rx="15"/><rect x="40" y="245" width="270" height="85" rx="15"/>
+ </g>
+ <g font-size="20" text-anchor="middle">
+ <text x="175" y="150">Betäuben</text><text x="175" y="178">und Entbluten</text>
+ <text x="480" y="150">Brühen / Entborsten</text><text x="480" y="178">→ frühe AutoFOM-Messung</text>
+ <text x="785" y="150">Weitere Bearbeitung</text><text x="785" y="178">Ausnehmen / Spalten</text>
+ <text x="785" y="280">Sondenmessung</text><text x="785" y="308">am gespaltenen Körper</text>
+ <text x="480" y="280">Fleischuntersuchung</text><text x="480" y="308">amtliche Aufgabe</text>
+ <text x="175" y="280">Warmverwiegung</text><text x="175" y="308">danach Kühlung</text>
+ </g>
+ <g font-size="30" text-anchor="middle"><text x="327" y="165">→</text><text x="632" y="165">→</text><text x="785" y="229">↓</text><text x="632" y="296">←</text><text x="327" y="296">←</text></g>
+ <rect x="40" y="370" width="880" height="110" rx="15" fill="#d7ebe3"/>
+ <text x="65" y="409" font-size="23" font-weight="bold">Eine Schlachtnummer verbindet die Daten</text>
+ <text x="65" y="446" font-size="20">Messwerte → MFA / Klasse → Gewicht → Protokoll / Abrechnung</text>
+ <text x="40" y="527" font-size="20">Merke: AutoFOM erfasst vor der späteren Verwiegung.</text>
+ <text x="40" y="563" font-size="20">Warmgewicht: nach Fleischuntersuchung, vor Kühlung.</text>
+ <text x="40" y="599" font-size="20">Die Zeichnung zeigt Funktionen; sie ist kein Anlagenbauplan.</text>
+ </g>
+</svg>

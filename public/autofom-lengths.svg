@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 410" role="img" aria-labelledby="t d">
+ <title id="t">AutoFOM I und III: unterschiedliche Testlängen</title>
+ <desc id="d">Anleitung 2016: AutoFOM I Sollwert 100 Millimeter plus minus 0,9, Bereich 99,1 bis 100,9. AutoFOM III Sollwert 50 plus minus 1, Bereich 49 bis 51. Alle 16 Schallköpfe prüfen. Bei III müssen weitere technische Parameter stimmen.</desc>
+ <rect width="900" height="410" rx="24" fill="#f1f7f5"/>
+ <g font-family="Arial,sans-serif" fill="#153c36" text-anchor="middle">
+ <text x="450" y="48" font-size="26" font-weight="bold">AutoFOM: Prüflängen getrennt lernen</text>
+ <text x="450" y="80" font-size="18">Lernwerte der Anleitung 2016 · zur konkreten Anlage abgleichen</text>
+ <rect x="35" y="110" width="400" height="180" rx="18" fill="#d7ebe3"/>
+ <rect x="465" y="110" width="400" height="180" rx="18" fill="#e1eafa"/>
+ <g font-size="25" font-weight="bold"><text x="235" y="150">AutoFOM I</text><text x="665" y="150">AutoFOM III</text></g>
+ <g font-size="30"><text x="235" y="201">100,0 ±0,9 mm</text><text x="665" y="201">50,0 ±1,0 mm</text></g>
+ <g font-size="21"><text x="235" y="253">99,1–100,9 mm</text><text x="665" y="253">49,0–51,0 mm</text></g>
+ <text x="450" y="333" font-size="23" font-weight="bold">Alle 16 Schallköpfe müssen bestehen.</text>
+ <text x="450" y="375" font-size="18">AutoFOM III: zusätzliche technische Parameter ebenfalls einhalten.</text>
+ </g>
+</svg>

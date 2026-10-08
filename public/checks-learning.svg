@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 470" role="img" aria-labelledby="t d">
+ <title id="t">Messkontrolle und Hygiene erfüllen verschiedene Aufgaben</title>
+ <desc id="d">Links: Testblock, Reflexion und Software prüfen die Messfunktion. Rechts: Reinigung, Desinfektion und saubere Kontaktflächen verhindern Übertragung. Vor Einsatz müssen beide Bereiche stimmen.</desc>
+ <rect width="960" height="470" rx="24" fill="#f1f7f5"/>
+ <g font-family="Arial,sans-serif" fill="#153c36">
+ <text x="35" y="50" font-size="27" font-weight="bold">Zwei Fragen vor dem Geräteeinsatz</text>
+ <rect x="35" y="85" width="430" height="235" rx="18" fill="#d7ebe3"/>
+ <rect x="495" y="85" width="430" height="235" rx="18" fill="#e1eafa"/>
+ <text x="60" y="130" font-size="24" font-weight="bold">Misst das Gerät korrekt?</text>
+ <text x="60" y="175" font-size="21">Testblock / Längenprüfung</text>
+ <text x="60" y="215" font-size="21">Reflexionskontrolle</text>
+ <text x="60" y="255" font-size="21">Software und Sicherungen</text>
+ <text x="520" y="130" font-size="24" font-weight="bold">Ist der Einsatz hygienisch?</text>
+ <text x="520" y="175" font-size="21">Reinigung nach Hygieneplan</text>
+ <text x="520" y="215" font-size="21">Vorgesehene Desinfektion</text>
+ <text x="520" y="255" font-size="21">Saubere Hände / Kontaktflächen</text>
+ <text x="480" y="360" text-anchor="middle" font-size="26" font-weight="bold">Beide Bereiche müssen stimmen</text>
+ <text x="480" y="402" text-anchor="middle" font-size="20">Ein bestandener Testblocktest beweist keine hygienische Sauberkeit.</text>
+ </g>
+</svg>

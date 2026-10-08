@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 520" role="img" aria-labelledby="t d">
+ <title id="t">OptiGrade MCP: Längenprüfung und Reflexionsprüfung</title>
+ <desc id="d">Nach der Geräteanleitung von 2016 aktiviert Taste 8 einmal die Längenprüfung und zweimal die Reflexionsprüfung. Die angezeigten Längen sind 9,7, 60 und 20,2 Millimeter mit jeweils 0,5 Millimeter Toleranz. Reflexion: 150 plus oder minus 9. Aktuelle Geräteunterlagen haben Vorrang.</desc>
+ <rect width="920" height="520" rx="24" fill="#f1f7f5"/>
+ <g font-family="Arial,sans-serif" fill="#153c36">
+ <text x="35" y="50" font-size="27" font-weight="bold">OptiGrade MCP: Welchen Check wählst du?</text>
+ <text x="35" y="85" font-size="18">Lernwerte der Geräteanleitung 2016 · aktuelle Anleitung abgleichen</text>
+ <rect x="35" y="120" width="410" height="290" rx="20" fill="#d7ebe3"/>
+ <rect x="475" y="120" width="410" height="290" rx="20" fill="#e1eafa"/>
+ <g font-size="24" font-weight="bold"><text x="60" y="163">Taste 8: einmal</text><text x="500" y="163">Taste 8: zweimal</text></g>
+ <g font-size="22"><text x="60" y="210">Längenprüfung</text><text x="500" y="210">Reflexionsprüfung</text></g>
+ <g font-size="19">
+ <text x="60" y="256">Angezeigte Sollwerte:</text><text x="60" y="290">9,7 / 60,0 / 20,2 mm</text><text x="60" y="324">Toleranz: jeweils ±0,5 mm</text>
+ <text x="500" y="256">Sollwert: 150 ±9</text><text x="500" y="290">Zulässiger Bereich: 141–159</text><text x="500" y="324">Beispiel 160: außerhalb</text>
+ <text x="60" y="375">Prüfblock verwenden</text><text x="500" y="375">Reflexionsmesshülse verwenden</text>
+ </g>
+ <text x="35" y="455" font-size="21" font-weight="bold">Nach jedem Neustart: Morgentest erforderlich.</text>
+ <text x="35" y="491" font-size="18">Softwarekennung separat exakt prüfen; sie hat keine Messtoleranz.</text>
+ </g>
+</svg>

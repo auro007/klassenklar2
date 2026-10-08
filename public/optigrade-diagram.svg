@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" width="100%" height="auto">
+  <title>OptiGrade MCP Einstichsonde und Messstelle</title>
+  <desc>Schematische Darstellung der Einstichstelle an der zweit-/drittletzten Rippe (7 cm / 4 cm), 90 Grad Winkel und optoelektronische Messung beim Zurückziehen.</desc>
+  <defs>
+    <linearGradient id="optiBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F9FBFB"/>
+      <stop offset="100%" stop-color="#ECEFF1"/>
+    </linearGradient>
+    <linearGradient id="probeGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#78909C"/>
+      <stop offset="100%" stop-color="#455A64"/>
+    </linearGradient>
+    <filter id="optiShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <rect width="760" height="380" rx="12" fill="url(#optiBg)"/>
+
+  <!-- Left: Insertion Anatomy Diagram -->
+  <g transform="translate(30, 20)">
+    <text x="0" y="20" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#17344B">OptiGrade MCP / Hand-FOM Sondenmessstelle (SchwHKlV Anlage 2)</text>
+    <text x="0" y="38" font-family="system-ui, sans-serif" font-size="11" fill="#546E7A">Linke Schweinehälfte (vom Betrachter aus rechts) · Zwischen 2. und 3. letzter Rippe</text>
+
+    <!-- Split line (Trennlinie / Wirbelsäule) -->
+    <line x1="20" y1="60" x2="20" y2="280" stroke="#B0BEC5" stroke-width="4" stroke-dasharray="6,4"/>
+    <text x="10" y="295" font-family="system-ui, sans-serif" font-size="10" font-weight="bold" fill="#546E7A">Trennlinie (Spaltung)</text>
+
+    <!-- Tissue Layers -->
+    <!-- Skin & Fat -->
+    <rect x="35" y="60" width="370" height="35" fill="#FFF9ED" stroke="#E6DAC4" stroke-width="1.5" rx="2"/>
+    <rect x="35" y="60" width="370" height="10" fill="#E8B89E"/>
+    <text x="350" y="82" font-family="system-ui, sans-serif" font-size="10" font-weight="bold" fill="#8D6E63">Rückenspeck (S)</text>
+
+    <!-- Muscle (M. longissimus dorsi) -->
+    <rect x="35" y="95" width="370" height="85" fill="#D35454" stroke="#B73232" stroke-width="1.5"/>
+    <text x="35" y="145" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" dx="15">M. longissimus dorsi (Rückenmuskel, Fleischmaß F)</text>
+
+    <!-- Intercostal / Ribs (Zwischenrippengewebe) -->
+    <rect x="35" y="180" width="370" height="30" fill="#CFD8DC" stroke="#90A4AE" stroke-width="1"/>
+    <text x="50" y="200" font-family="system-ui, sans-serif" font-size="10" font-weight="bold" fill="#455A64">Zwischenrippengewebe / Rippen (G = F + Z → F* = 0,95 × G − 3)</text>
+
+    <!-- 7 cm ± 1 cm Marker from Split Line -->
+    <line x1="20" y1="50" x2="160" y2="50" stroke="#E65100" stroke-width="2"/>
+    <polygon points="20,47 20,53 14,50" fill="#E65100"/>
+    <polygon points="160,47 160,53 166,50" fill="#E65100"/>
+    <text x="90" y="44" font-family="system-ui, sans-serif" font-size="10.5" font-weight="bold" fill="#E65100" text-anchor="middle">7 cm ± 1 cm (Einstich)</text>
+
+    <!-- 4 cm ± 0.5 cm Marker for Exit -->
+    <line x1="20" y1="225" x2="100" y2="225" stroke="#00897B" stroke-width="2"/>
+    <polygon points="20,222 20,228 14,225" fill="#00897B"/>
+    <polygon points="100,222 100,228 106,225" fill="#00897B"/>
+    <text x="60" y="240" font-family="system-ui, sans-serif" font-size="10" font-weight="bold" fill="#00897B" text-anchor="middle">4 cm ± 0,5 cm (Austritt)</text>
+
+    <!-- The Insertion Probe (OptiGrade Pistole) -->
+    <line x1="160" y1="35" x2="160" y2="215" stroke="#37474F" stroke-width="5"/>
+    <polygon points="156,215 164,215 160,228" fill="#D32F2F"/>
+    <!-- Optical sensor window -->
+    <circle cx="160" cy="140" r="3.5" fill="#00E5FF"/>
+    <text x="175" y="143" font-family="system-ui, sans-serif" font-size="9" font-weight="bold" fill="#00838F">Lichtgeber &amp; Fotozelle</text>
+
+    <!-- 90° Angle indicator -->
+    <path d="M 160 75 L 175 75 L 175 60" fill="none" stroke="#E65100" stroke-width="1.5"/>
+    <text x="180" y="72" font-family="system-ui, sans-serif" font-size="9" font-weight="bold" fill="#E65100">90° waagerecht</text>
+
+    <!-- Upward arrow for withdrawal -->
+    <line x1="135" y1="180" x2="135" y2="100" stroke="#0288D1" stroke-width="3"/>
+    <polygon points="130,105 140,105 135,92" fill="#0288D1"/>
+    <text x="125" y="140" font-family="system-ui, sans-serif" font-size="9.5" font-weight="bold" fill="#0288D1" text-anchor="end">MESSUNG BEIM</text>
+    <text x="125" y="152" font-family="system-ui, sans-serif" font-size="9.5" font-weight="bold" fill="#0288D1" text-anchor="end">HERAUSZIEHEN</text>
+  </g>
+
+  <!-- Right: Morning Check Targets (Blatt 5 & 6) -->
+  <g transform="translate(460, 50)">
+    <rect width="265" height="235" rx="8" fill="#FFFFFF" stroke="#087E83" stroke-width="2" filter="url(#optiShadow)"/>
+    <rect x="0" y="0" width="265" height="32" rx="6" fill="#087E83"/>
+    <text x="132" y="21" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Morgentest-Sollwerte (Blatt 5)</text>
+
+    <!-- Tip -->
+    <text x="15" y="55" font-family="system-ui, sans-serif" font-size="10.5" font-weight="bold" fill="#263238">1. Sondenspitze abmessen:</text>
+    <text x="15" y="70" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#00838F">8,5 mm ± 0,5 mm (8,0 bis 9,0 mm)</text>
+
+    <!-- Sleeve -->
+    <text x="15" y="98" font-family="system-ui, sans-serif" font-size="10.5" font-weight="bold" fill="#263238">2. Reflexionshülse:</text>
+    <text x="15" y="113" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#00838F">Sollwert: 150 ± 3 (Taste 8 zweimal)</text>
+
+    <!-- Test block -->
+    <text x="15" y="141" font-family="system-ui, sans-serif" font-size="10.5" font-weight="bold" fill="#263238">3. Testblock (Testschwein):</text>
+    <text x="15" y="156" font-family="system-ui, sans-serif" font-size="10" fill="#37474F">• <b>5 Teststiche</b> von jeder Seite</text>
+    <text x="15" y="171" font-family="system-ui, sans-serif" font-size="10.5" font-weight="bold" fill="#00838F">• Stich 1: 8,7 / 60,0 mm (± 0,5)</text>
+    <text x="15" y="186" font-family="system-ui, sans-serif" font-size="10.5" font-weight="bold" fill="#00838F">• Stich 2: 20,2 / 60,0 mm (± 0,5)</text>
+
+    <!-- Memory note -->
+    <rect x="12" y="196" width="241" height="28" rx="4" fill="#E0F2F1"/>
+    <text x="132" y="213" font-family="system-ui, sans-serif" font-size="9" font-weight="bold" fill="#004D40" text-anchor="middle">hell = Speckmaß (mm) · dunkel = Fleischmaß (mm)</text>
+  </g>
+
+  <!-- Bottom formula bar -->
+  <rect x="30" y="300" width="700" height="60" rx="6" fill="#FFFFFF" stroke="#CFD8DC" stroke-width="1.5"/>
+  <text x="50" y="324" font-family="system-ui, sans-serif" font-size="11.5" font-weight="bold" fill="#17344B">OptiGrade Formel (Anlage 2):</text>
+  <text x="260" y="324" font-family="monospace" font-size="12.5" font-weight="bold" fill="#00695C">MFA % = 60,98501 − (0,85831 × S) + (0,16449 × F)</text>
+  <text x="50" y="347" font-family="system-ui, sans-serif" font-size="10" fill="#455A64">Geräteidentität: Hauptspeicher &amp; Hauptanzeige ist die Pistole · Protokollaufbewahrung: mind. 6 Monate</text>
+</svg>

@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" width="100%" height="auto">
+  <title>Zwei-Punkt-Verfahren (ZP) Messpunkte und Lineal</title>
+  <desc>Grafische Darstellung der beiden Messpunkte S (Speckmaß) und F (Fleischmaß) am M. glutaeus medius an der gespaltenen Schweinehälfte nach SchwHKlV Anlage 3.</desc>
+  <defs>
+    <linearGradient id="zpBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F9FBFB"/>
+      <stop offset="100%" stop-color="#EFF5F7"/>
+    </linearGradient>
+    <filter id="zpShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="760" height="380" rx="12" fill="url(#zpBg)"/>
+
+  <!-- Left Side: Cross-Section Anatomy & Points -->
+  <g transform="translate(30, 20)">
+    <!-- Header -->
+    <text x="0" y="20" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#17344B">Zwei-Punkt-Verfahren (SchwHKlV Anlage 3)</text>
+    <text x="0" y="38" font-family="system-ui, sans-serif" font-size="11" fill="#5A7180">Zulässig nur bei durchschnittlich ≤ 200 geschlachteten Schweinen / Woche</text>
+
+    <!-- Split Carcass Block -->
+    <!-- Rind / Schwarte -->
+    <rect x="20" y="60" width="360" height="12" fill="#E8B89E" rx="2"/>
+    <text x="390" y="70" font-family="system-ui, sans-serif" font-size="10" font-weight="bold" fill="#7A422D">Außenhaut / Schwarte</text>
+
+    <!-- Fat Layer (Speck) -->
+    <rect x="20" y="72" width="360" height="36" fill="#FFF9ED" stroke="#E6DAC4" stroke-width="1"/>
+    <text x="390" y="94" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#8C733E">Rückenspeck</text>
+
+    <!-- Muscle: M. glutaeus medius (Lendenmuskel) -->
+    <path d="M 20 108 Q 120 108 190 145 Q 260 175 380 180 L 380 230 L 20 230 Z" fill="#D35454" stroke="#B73232" stroke-width="1.5"/>
+    <text x="70" y="165" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF">M. glutaeus medius</text>
+    <text x="70" y="180" font-family="system-ui, sans-serif" font-size="9.5" fill="#FFEAEA">(mittlerer Gesäßmuskel)</text>
+
+    <!-- Vertebral Canal / Spinal Edge (Wirbelkanal) -->
+    <rect x="20" y="230" width="360" height="26" fill="#CFD8DC" stroke="#90A4AE" stroke-width="1.5" rx="3"/>
+    <text x="140" y="247" font-family="system-ui, sans-serif" font-size="10.5" font-weight="bold" fill="#37474F">Wirbelkanal / Wirbelsäule (dorsale Kante)</text>
+
+    <!-- MEASUREMENT POINT S (Speckmaß) -->
+    <!-- Thinnest fat point over M. glutaeus medius -->
+    <line x1="260" y1="60" x2="260" y2="108" stroke="#E65100" stroke-width="3.5"/>
+    <polygon points="256,64 264,64 260,56" fill="#E65100"/>
+    <polygon points="256,104 264,104 260,112" fill="#E65100"/>
+    <circle cx="260" cy="84" r="14" fill="#E65100" filter="url(#zpShadow)"/>
+    <text x="260" y="89" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">S</text>
+
+    <!-- Callout S -->
+    <path d="M 275 84 L 340 50 L 460 50" fill="none" stroke="#E65100" stroke-width="1.5"/>
+    <rect x="465" y="32" width="230" height="36" rx="4" fill="#FFFFFF" stroke="#E65100" stroke-width="1.5" filter="url(#zpShadow)"/>
+    <text x="475" y="47" font-family="system-ui, sans-serif" font-size="10.5" font-weight="bold" fill="#BF360C">S = Speckmaß (in mm)</text>
+    <text x="475" y="61" font-family="system-ui, sans-serif" font-size="9" fill="#37474F">Dünnste Stelle über M. glutaeus medius (inkl. Schwarte)</text>
+
+    <!-- Cranial End Landmark -->
+    <circle cx="190" cy="145" r="5" fill="#00E5FF" stroke="#00838F" stroke-width="2"/>
+    <text x="200" y="142" font-family="system-ui, sans-serif" font-size="9.5" font-weight="bold" fill="#006064">Craniales Ende</text>
+
+    <!-- MEASUREMENT POINT F (Fleischmaß) -->
+    <!-- Shortest horizontal distance from cranial end to dorsal spinal edge -->
+    <line x1="190" y1="145" x2="190" y2="230" stroke="#00897B" stroke-width="3.5"/>
+    <polygon points="186,149 194,149 190,141" fill="#00897B"/>
+    <polygon points="186,226 194,226 190,234" fill="#00897B"/>
+    <circle cx="190" cy="188" r="14" fill="#00897B" filter="url(#zpShadow)"/>
+    <text x="190" y="193" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">F</text>
+
+    <!-- Callout F -->
+    <path d="M 205 188 L 320 205 L 465 205" fill="none" stroke="#00897B" stroke-width="1.5"/>
+    <rect x="465" y="185" width="230" height="38" rx="4" fill="#FFFFFF" stroke="#00897B" stroke-width="1.5" filter="url(#zpShadow)"/>
+    <text x="475" y="201" font-family="system-ui, sans-serif" font-size="10.5" font-weight="bold" fill="#004D40">F = Fleischmaß (in mm)</text>
+    <text x="475" y="215" font-family="system-ui, sans-serif" font-size="9" fill="#37474F">Kürzeste horizontale Strecke zum Wirbelkanal</text>
+
+    <!-- ZP Measuring Ruler / Caliper Visual -->
+    <rect x="465" y="90" width="230" height="75" rx="6" fill="#FFFFFF" stroke="#78909C" stroke-width="1.5" filter="url(#zpShadow)"/>
+    <text x="475" y="108" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#263238">📏 Das ZP-Messlineal</text>
+    <text x="475" y="125" font-family="system-ui, sans-serif" font-size="9" fill="#455A64">• Manuelles Schiebe-Messlineal aus Edelstahl</text>
+    <text x="475" y="139" font-family="system-ui, sans-serif" font-size="9" fill="#455A64">• Prüftoleranz Speck: <b>± 2 mm</b></text>
+    <text x="475" y="153" font-family="system-ui, sans-serif" font-size="9" fill="#455A64">• Prüftoleranz Fleisch: <b>± 3 mm</b> (max. 10 % Fehler)</text>
+  </g>
+
+  <!-- Formula Callout (Bottom Bar) -->
+  <rect x="30" y="300" width="700" height="60" rx="6" fill="#FFFFFF" stroke="#087E83" stroke-width="2" filter="url(#zpShadow)"/>
+  <text x="50" y="324" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#004D40">ZP-Schätzformel:</text>
+  <text x="175" y="324" font-family="monospace" font-size="13" font-weight="bold" fill="#00695C">MFA % = 58,10122 − (0,56495 × S) + (0,13199 × F)</text>
+  <text x="50" y="347" font-family="system-ui, sans-serif" font-size="10" fill="#37474F">Beispiel: <b>S = 16 mm, F = 60 mm</b> → 58,10122 − 9,0392 + 7,9194 = <b>56,98 % → Handelsklasse E</b></text>
+</svg>
