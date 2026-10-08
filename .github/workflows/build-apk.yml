@@ -1,0 +1,77 @@
+name: Build Android APK
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-apk:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci || npm install
+
+      - name: Sync Capacitor Android
+        run: npx cap sync android
+
+      - name: Set up Java JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Make Gradlew Executable
+        run: chmod +x android/gradlew
+
+      - name: Build Debug APK
+        run: |
+          cd android
+          ./gradlew assembleDebug --no-daemon
+
+      - name: Upload APK Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Klassenklar-v2-APK
+          path: android/app/build/outputs/apk/debug/app-debug.apk
+          retention-days: 30
+
+      - name: Create GitHub Release with APK
+        uses: softprops/action-gh-release@v2
+        if: github.ref == 'refs/heads/main'
+        with:
+          tag_name: v2.0.0
+          name: Klassenklar Version 2.0 (Android APK)
+          body: |
+            ### 📱 Klassenklar Version 2.0 - Android APK
+            
+            Installierbare APK-Datei für dein Android-Smartphone.
+            
+            - **Herunterladen:** Klicke unten auf `app-debug.apk` bzw. `Klassenklar-v2.apk`
+            - **Installation:** Öffne die heruntergeladene Datei auf deinem Smartphone und wähle „Installieren“ (falls gefragt, „Aus dieser Quelle installieren“ erlauben).
+            
+            #### Enthaltene Funktionen:
+            - Vollständige Offline-Nutzung (auch ohne Internet)
+            - Neue **Geräte-Mediathek** mit AutoFOM III, ZP-Verfahren & OptiGrade
+            - 38 Lektionen, 138 Fragen, 53 Karteikarten
+            - Interaktiver MFA-Simulator
+          files: |
+            android/app/build/outputs/apk/debug/app-debug.apk
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

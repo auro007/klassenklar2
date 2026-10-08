@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Klassenklar</string>
+    <string name="title_activity_main">Klassenklar</string>
+    <string name="package_name">de.klassenklar.app</string>
+    <string name="custom_url_scheme">de.klassenklar.app</string>
+</resources>

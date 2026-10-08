@@ -5,7 +5,15 @@
   "description": "Mobile-first local learning app for German pig carcass classification",
   "scripts": {
     "start": "node server.js",
-    "check": "node --check server.js && node --check public/app.js && node tests/smoke.mjs"
+    "check": "node --check server.js && node --check public/app.js && node tests/smoke.mjs",
+    "build:android": "npx cap sync android"
   },
-  "engines": { "node": ">=20" }
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^8.5.3",
+    "@capacitor/cli": "^8.5.3",
+    "@capacitor/core": "^8.5.3"
+  }
 }
